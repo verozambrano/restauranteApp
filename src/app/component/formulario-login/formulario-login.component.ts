@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, inject, Inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { AccesoService } from '../../services/acceso.service';
 
@@ -14,11 +14,16 @@ export class FormularioLoginComponent {
   correo:any=""
   contrasenia:any=""
     
-  servisio =Inject(AccesoService)
+  servisio = inject(AccesoService)
+  meserio=[]
+  Admi=[]
   ngOnInit(){
 
-    this.servisio.ge
+    this.servisio.getUsuarios().subscribe( u =>
+      this.meserio= u
+    )
   }
+  
    login(form: NgForm){
     console.log(form.value)
    }

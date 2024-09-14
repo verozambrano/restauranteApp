@@ -10,10 +10,10 @@ export class AccesoService {
   constructor(private http:HttpClient) { }
   private="http://localhost:3000/usuarios"
   getUsuarios():Observable <any>{
-   return this.http.get(this.API_USER)
+   return this.http.get(this.postUser)
   }
   
-  postUser():Observable<any>{
+  postUser(usuer1:JSON):Observable<any>{
     return this.http.post(this.API_USER.Mesero)
   }
 }
