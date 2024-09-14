@@ -1,0 +1,8 @@
+<form (ngSubmit)="login(formulario)" #formulario="ngForm">
+    <label >Ingrese correo</label>
+    <input type="text"  name="correo"  [(ngModel)]="correo">
+
+    <label >Ingrese contraseña</label>
+    <input type="text"  name="contrasenia"  [(ngModel)]="contrasenia">
+     <button type="submit">Acceder</button>
+</form>
