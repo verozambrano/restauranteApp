@@ -1,0 +1,25 @@
+{
+    "usuarios": {
+      "usuarioId1": {
+        
+        "emil": "Juan@yop.com",
+        "password": "123456"
+      },
+      "usuarioId2": {
+        "email": "Maria@yop.com",
+        "password": "admin"
+      }
+    },
+    "ordenes": {
+      "ordenId1": {
+        "mesa": "Mesa 1",
+        "producto": "Pizza",
+        "total": 15
+      },
+      "ordenId2": {
+        "mesa": "Mesa 2",
+        "producto": "Hamburguesa",
+        "total": 10
+      }
+    }
+  }
